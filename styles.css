@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container img {
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.highlight {
+  color: #846aff;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas na versão web */
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas na versão tablet */
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 coluna na versão mobile */
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  flex-direction: column;
+  /* Coloca o conteúdo em coluna */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.container img {
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.highlight {
+  color: #846aff;
+  font-weight: bold;
+}
+
+/* Estilos do formulário de contato */
+.form-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #7c7c8a;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+  background-color: #846aff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #846aff;
+}
+
+.form-container p {
+  text-align: center;
+  color: #ffffff;
+}
+
+.body > div.container > div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+body > div.container > div > p:nth-child(3) {
+  height: 50px;
+  width: 215px;
+  display: flex;
+  background: #846aff;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
